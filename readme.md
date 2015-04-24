@@ -29,7 +29,7 @@ You are allowed to use any library if you need to but primarily we will be looki
 	- List of passengers. Each passenger is an object with a `color` and `y` property, such as: `{ color: "#00ff11", y: 586.7631993032992 }`
 	- List of center of doors for first wall, eg: `[700, 2181, 89, 834, 1471, 1109, 284, 597, 2688, 383]`
 	- List of center of doors for second wall
-- Your solution should render the results into `<div id="escape-map"></div>`.
+- Your solution should render the map into `<div id="escape-map"></div>`.
 - `makeMap` should return with the list of calculated routes. Each route should contain its start, finish and corner points, eg:
 `[ [{x: 0, y: 10}, {x:123, y: 1232}], [{x: 340, y: 10}, {x:1423, y: 1232}] ... ]`
 - You can assume 240 passengers and 8 species (colors) maximum. 
