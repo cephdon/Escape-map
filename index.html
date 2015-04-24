@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Escape Map</title>
+
+	<style>
+		#escape-map {
+			width:2000px;
+			height: 3000px;
+			border: 1px solid #abb;
+		}
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="escapeMap.css">
+	<script src="escapeMap.js"></script>
+	<script src="escapeMapTester.js"></script>	
+	<script src="routeDisplay.js"></script>	
+</head>
+<body>
+
+<div id="escape-map"></div>
+
+<script>
+	
+// This input should generate similar results to escape-map-example.png:
+
+var passangers = [
+		{
+			color: "#00ff11",
+			y: 586.7631993032992
+		},
+		{
+			color: "#00ff11",
+			y: 953.69578340929,
+		},
+		{
+			color: "#1100aa",
+			y: 1985.0583893470466
+		},
+		{	color: "#00ff11",
+			y: 2239.3222480583936
+		},
+		{	color: "#00ff11",
+			y: 689.6570375394076
+		},
+		{	
+			color: "#aa11aa",
+			y: 415.81860828213394
+		},
+		{
+			color: "#00ff11",
+			y: 296.30280494503677
+		},
+		{
+			color: "#aa11aa",
+			y: 375.5867989361286
+		},
+		{
+			color: "#aa11aa",
+			y: 849.9394752485678
+		},
+		{
+			color: "#00ff11",
+			y: 88.13917869050056
+		}
+	],
+	doors1 = [700, 2181, 89, 834, 1471, 1109, 284, 597, 2688, 383],
+	doors2 = [736, 1263, 312, 1975, 940, 198, 442, 2399, 1747, 1036, 1625];
+
+//makeMap(passangers, doors1, doors2);
+
+
+// Uncomment and use this to test with random-generated data:
+
+ escapeMapTester(240, [
+ 	'#ff0011',
+ 	'#1100aa',
+ 	'#00ff11',
+ 	'#dddd11',
+ 	'#11aaaa',
+ 	'#aa11aa'
+ ]);
+
+
+</script>
+
+</body>
+</html>
