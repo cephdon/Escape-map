@@ -3,7 +3,7 @@ This problem leads back to the very distant future. Imagine a scene in a space e
 
 To help the emergency crew in these situations, your job is to write an emergency map genareter and visualizer utility that can be deployed to various space ships with different wall/deck configurations and passenger capacity.
 
-##Considerations for the visualization:
+##Considerations for the visual layout:
 
 See [escape-map-example.png](escape-map-example.png) as reference solution.
 
