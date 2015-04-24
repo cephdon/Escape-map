@@ -43,7 +43,7 @@ Use the linked repository as starter kit for your work. See index.html for test 
 
 When called with the arguments you find in index.html, an acceptable solution should generate similar result (should not necessarily mirror it pixel by pixel) to the example image. 
 
-Furthermore, you can use the provided `escapeMapTester.js` library to drive your solution with random arguments. `escapeMapTester` will call `makeMap` automatically and also display some stats next to the map. 
+Furthermore, you can use the provided `escapeMapTester.js` library to drive your solution with random-generated dummy input. `escapeMapTester` will call `makeMap` automatically and also display some stats next to the map. 
 
 ##Submission guidelines:
 
