@@ -1,3 +1,5 @@
+__This challenge can be addressed many different ways. We do not anticipate you spending days of effort on implementing a highly sophisticated and robust solution but you should be able to discuss how it could be evolved further. Please ask if you have questions and use your assumptions for parts of the story you find under specified.__
+
 #Escape Map
 This problem leads back to the very distant future. Imagine a scene in a space epic where the passengers of a cruiser attacked by pirates have just received the command to evacuate. They are waiting in the ship's main passenger area for final escape directions. There are two parallel walls separating them and the deck where the escape pods will be launched from. The passengers are species of different alien races and there is a single escape pod for each race. Following the distributed escape route, every passenger should be able to find the suitable pod quickly.
 
@@ -5,7 +7,7 @@ To help the emergency crew in these situations, your job is to write an emergenc
 
 ##Considerations for the visual layout:
 
-See [escape-map-example.png](escape-map-example.png) as reference solution.
+See [escape-map-example.png](escape-map-example.png) and [escape-map-example-many.jpg](escape-map-example-many.jpg) as reference solutions.
 
 - The area of focus (size of the map) is 2000px by 3000px.
 - All passengers (circles) are standing in a column at 20px on the left side. Their color and vertical position will be provided.
@@ -15,13 +17,10 @@ See [escape-map-example.png](escape-map-example.png) as reference solution.
 - Walls are 20px wide.
 - Doors are 70px wide.
 - Passengers should keep 4px clearance from walls and door frames.
-- Maximum 30 routes can pass through the same door. Passengers should avoid crossing each other's way while going through doors.
+- Maximum 30 routes can pass through the same door. Passengers should avoid crossing each other's way while going through doors. (Passangers from different races _can_ go through the same door.)
 - The color of the routes should match the provided color of the passenger/escape pod.
 
 ##Instructions for implementation:
-
-__This problem can be addressed many different ways. We do not anticipate you spending days of effort on implementing a highly sophisticated and robust solution but you should be able to discuss how it could be evolved further.__
-
 You are allowed to use any library if you need to but primarily we will be looking at your core HTML/CSS/JS skills and approach to visualization problems. Focus on simplicity, write readable code.
 
 - The solution should be implemented as a global function named `makeMap`.
@@ -41,7 +40,7 @@ Use the linked repository as starter kit for your work. See index.html for test 
 
 ##Instructions for testing:
 
-When called with the arguments you find in index.html, an acceptable solution should generate similar result (should not necessarily mirror it pixel by pixel) to the example image. 
+When called with the arguments you find in index.html, an acceptable solution should generate similar result (should not necessarily mirror it pixel by pixel) to escape-map-example.png. 
 
 Furthermore, you can use the provided `escapeMapTester.js` library to drive your solution with random-generated dummy input. `escapeMapTester` will call `makeMap` automatically and also display some stats next to the map. 
 
