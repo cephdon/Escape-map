@@ -3,7 +3,7 @@ __This challenge can be addressed many different ways. We do not anticipate you 
 #Escape Map
 This problem leads back to the very distant future. Imagine a scene in a space epic where the passengers of a cruiser attacked by pirates have just received the command to evacuate. They are waiting in the ship's main passenger area for final escape directions. There are two parallel walls separating them and the deck where the escape pods will be launched from. The passengers are species of different alien races and there is a single escape pod for each race. Following the distributed escape route, every passenger should be able to find the suitable pod quickly.
 
-To help the emergency crew in these situations, your job is to write an emergency map genareter and visualizer utility that can be deployed to various space ships with different wall/deck configurations and passenger capacity.
+To help the emergency crew in these situations, your job is to write an emergency map genaretor and visualizer utility that can be deployed to various space ships with different wall/deck configurations and passenger capacity.
 
 ##Considerations for the visual layout:
 
