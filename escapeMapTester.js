@@ -4,7 +4,7 @@
 
 	'use strict';
 
-	global.escapeMapTester = function(couuntOfPassangers, colors) {
+	global.escapeMapTester = function(countOfPassengers, colors) {
 
 		var MAP_HEIGHT = 3000,
 			PADDING = 12,
@@ -12,9 +12,9 @@
 			MIN_DOOR_COUNT = 8,
 			MAX_DOOR_COUNT = 12,
 
-			passangers = [],
-			passangersSorted,
-			availableHeight = MAP_HEIGHT - (couuntOfPassangers + 1) * PADDING,
+			passengers = [],
+			passengersSorted,
+			availableHeight = MAP_HEIGHT - (countOfPassengers + 1) * PADDING,
 			doors1 = [],
 			doors2 = [],
 			count,
@@ -22,24 +22,24 @@
 
 		l = colors.length;
 
-		for (i = 0; i < couuntOfPassangers; i++) {
-			passangers.push({
+		for (i = 0; i < countOfPassengers; i++) {
+			passengers.push({
 				color: colors[Math.floor(Math.random() * l)],
 				y: Math.random() * availableHeight
 			});
 		}
 
-		passangersSorted = passangers.slice();
+		passengersSorted = passengers.slice();
 
-		passangersSorted.sort(function(a, b) {
+		passengersSorted.sort(function(a, b) {
 			return a.y - b.y;
 		});
 
-		for (i = 0; i < passangersSorted.length; i++) {
-			passangersSorted[i].y += (i + 1) * PADDING;
+		for (i = 0; i < passengersSorted.length; i++) {
+			passengersSorted[i].y += (i + 1) * PADDING;
 		}
 
-		console.log('Passangers:', passangers);
+		console.log('Passengers:', passengers);
 
 		function willNotInterfereWithOtherDoors(newDoor, doors) {
 
@@ -85,7 +85,7 @@
 
 		console.log( 'Doors:', doors1, doors2);
 
-		global.displayMap(makeMap, passangers, doors1, doors2);
+		global.displayMap(makeMap, passengers, doors1, doors2);
 	};
 
 }(window));
