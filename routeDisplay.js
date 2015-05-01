@@ -55,7 +55,7 @@
 
 	};
 
-	global.displayMap = function(mapFunction, passangers, wall1Doors, wall2Doors) {
+	global.displayMap = function(mapFunction, passengers, wall1Doors, wall2Doors) {
 
 		var startTime,
 			averageRouteLength,
@@ -63,7 +63,7 @@
 			duration;
 
 		startTime = Date.now();
-		routes = mapFunction(passangers, wall1Doors, wall2Doors);
+		routes = mapFunction(passengers, wall1Doors, wall2Doors);
 		duration = Date.now() - startTime;
 
 		averageRouteLength = showAverageRouteLength(routes, duration);
